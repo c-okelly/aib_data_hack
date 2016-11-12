@@ -24,6 +24,7 @@ def main(base_file):
 
 if (__name__ == "__main__"):
 
-    main("data/training.txt")
+    file = input("Where is the file?")
+    main(file)
 
 

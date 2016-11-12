@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 
 
-def load_data():
+def load_data(file_name):
 
-    data = pd.read_csv("back_up.csv")
+    data = pd.read_csv(file_name)
 
     # print(data.head())
     # Remove nan values and repacle with ?
@@ -117,7 +117,7 @@ def pandas2arff(df,filename,wekaname = "pandasdata",cleanstringdata=True,cleanna
 if (__name__ == "__main__"):
 
     print('Start')
-    load_data()
+    load_data("current_write.csv")
     print("Finish")
 
 

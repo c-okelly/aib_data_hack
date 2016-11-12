@@ -36,7 +36,7 @@ def load_data_split_lines(file_name):
 
 
 def write_file_to_csv(row_matrix):
-    with open("trainig_set.csv", "w") as f:
+    with open("current_write.csv", "w") as f:
         writer = csv.writer(f)
         writer.writerows(row_matrix)
 

@@ -27,7 +27,7 @@ def load_data(file_name):
             y = float((x[:-1]))/100
             return y
         except:
-            print(x)
+            # print(x)
             return x
 
     # Format column with percentage
@@ -37,11 +37,11 @@ def load_data(file_name):
     # data.convert_objects(convert_numeric=True)
     data["GroundFloorArea"] = data["GroundFloorArea"].apply(pd.to_numeric)
     # Remove columns that have less then 90% for all values
-    print(data.dtypes)
+    # print(data.dtypes)
     # Remove na values
     # data = data.fillna("?")
 
-    data = data.head(n=30)
+    # data = data.head(n=30)
 
     # Save out put as csv files
     # data.to_csv("Numeric.csv") 
